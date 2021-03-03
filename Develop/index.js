@@ -8,7 +8,10 @@ const questions = ["What will be the title of this document?", "Please enter a d
 // console.log("First question: " + questions[0]);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // const fileName = data.title
+    // fs.writeFile
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -20,6 +23,7 @@ function init() {
                 message: questions[0]
             }
         ])
+        .then(writeToFile());
 }
 
 // Function call to initialize app
