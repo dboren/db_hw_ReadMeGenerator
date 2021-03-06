@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const md = require(/utils/generateMarkdown);
+// const md = require(/utils/generateMarkdown);
 
 // TODO: Create an array of questions for user input
 const questions = ["What will be the title of this document?", "Please enter a description of the project.", "What will be in the table of contents?", "How is this app installed?", "How is this app used?", "Which license does this app use?", "Who contributed to this project?", "How can we contact you with additional questions?"];
@@ -22,6 +22,41 @@ function init() {
                 type: 'input',
                 name: 'title',
                 message: questions[0]
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: questions[1]
+            },
+            {
+                type: 'input',
+                name: 'contents',
+                message: questions[2]
+            },
+            {
+                type: 'input',
+                name: 'install',
+                message: questions[3]
+            },
+            {
+                type: 'input',
+                name: 'use',
+                message: questions[4]
+            },
+            {
+                type: 'input',
+                name: 'license',
+                message: questions[5],
+            },
+            {
+                type: 'input',
+                name: 'contributors',
+                message: questions[6]
+            },
+            {
+                type: 'input',
+                name: 'contact',
+                message: questions[7]
             }
         ])
         .then(writeToFile());
