@@ -12,7 +12,7 @@ const questions = ["What will be the title of this document?", "Please enter a d
 // TODO: Create a function to write README file
 function writeToFile(data) {
     const fileName = `README.md`
-    fs.writeFile(fileName, data)
+    fs.writeFile(fileName, data) 
         .then(generateMarkdown(data));
     
 }
@@ -62,7 +62,14 @@ function init() {
                 message: questions[7]
             }
         ])
-        .then(writeToFile(data));
+        .then((data) => {
+            writeToFile(data);
+        })
+        // console.log("data: " + data);
+        // .then(writeToFile());
+        // console.log("data: " + data);
+        // console.log(generateMarkdown);
+
 }
 
 // Function call to initialize app
