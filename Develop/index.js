@@ -10,8 +10,8 @@ const questions = ["What will be the title of this document?", "Please enter a d
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    // const fileName = data.title
-    // fs.writeFile
+    // const fileName = data.title.
+    // fs.writeFile(fileName
 }
 
 // TODO: Create a function to initialize app
