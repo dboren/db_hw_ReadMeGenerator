@@ -14,6 +14,32 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## Description
+
+  ${data.description}
+
+  ## Table of Contents
+
+  ${data.contents}
+
+  ## How to Install
+
+  ${data.install}
+
+  ## How to Use this App
+
+  ${data.use}
+
+  ## Licenses used
+
+  ${data.license}
+
+  ## Contributors
+
+  -${data.contributors}
+
+  For further information, please reach out to ${data.contact}
+
 
 `;
 }

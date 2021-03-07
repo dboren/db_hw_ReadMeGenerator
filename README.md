@@ -1,10 +1,10 @@
 {
-	"title": "e",
-	"description": "e",
-	"contents": "e",
-	"install": "e",
-	"use": "e",
-	"license": "e",
-	"contributors": "e",
-	"contact": "e"
+	"title": "t",
+	"description": "t",
+	"contents": "t",
+	"install": "t",
+	"use": "t",
+	"license": "t",
+	"contributors": "t",
+	"contact": "t"
 }
