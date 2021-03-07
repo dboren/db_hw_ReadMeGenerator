@@ -38,10 +38,7 @@ function generateMarkdown(data) {
 
   -${data.contributors}
 
-  For further information, please reach out to ${data.contact}
-
-
-`;
+  For further information, please reach out to ${data.contact}`;
 }
 
 module.exports = generateMarkdown;
