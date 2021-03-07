@@ -15,7 +15,7 @@ function writeToFile(data) {
     fs.writeFile(fileName, JSON.stringify(data, null, '\t'), function(err, result) {
         if(err) console.log('error', err);
       }) 
-        .then(generateMarkdown(data));
+        generateMarkdown(data);
         // return fileName;
     
 }
